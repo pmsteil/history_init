@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Gist URL for the raw version of your history_init.sh script
-GIST_URL="https://gist.githubusercontent.com/username/gist_id/raw/history_init.sh"
+GITHUB_RAW_URL="https://raw.githubusercontent.com/pmsteil/history_init/master/history_init.sh"
 
-# Download the latest version of the history_init.sh from the Gist
-curl -o ~/.history_init.sh "$GIST_URL"
+# Download the latest version of the history_init.sh from the repo
+curl -o ~/.history_init.sh "$GITHUB_RAW_URL"
 
 # Check if .bashrc or .zshrc exists and append sourcing of the script
 if [ -f ~/.bashrc ]; then
